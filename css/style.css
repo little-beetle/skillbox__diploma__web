@@ -1,0 +1,103 @@
+:root {
+  --color__1: #121723;
+  --color__2: #292e39;
+  --color__3: #a1a6b4;
+  --color__4: #d2d5dd;
+  --color__5: #e6e8ec;
+  --color__6: #bb973e;
+  --color__7: #f0d288;
+  --color__8: #0039a6;
+  --color__9: #d52b1e;
+  --color__10: #4f28a5;
+  --color__11: #6d31ee;
+  --color__12: #aa9dfa;
+  --color__13: #f5f6f7;
+  --color__14: #ffffff;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller-regular.eot");
+  src: local("Muller Regular"), local("muller-regular"),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller-regular-italic.eot");
+  src: local("Muller Regular Italic"), local("muller-regular-italic"),
+    url("../fonts/MullerRegularItalic.woff2") format("woff2"),
+    url("../fonts/MullerRegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller-medium.eot");
+  src: local("Muller Medium"), local("muller-medium"),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller-bold.eot");
+  src: local("Muller Bold"), local("muller-bold"),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* settings */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn__reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list__reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/* header */
