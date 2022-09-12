@@ -100,4 +100,375 @@ img {
   display: flex;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* header */
+
+.header {
+  background: var(--color__14);
+  border-bottom: 1px solid var(--color__5);
+}
+
+.header__nav__item:not(:first-child) {
+  margin-left: 55px;
+}
+
+.header__row__1 {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__block__nav {
+  align-items: center;
+}
+
+.header__nav {
+  margin: 0 auto;
+  min-height: 80px;
+  /* align-items: center; */
+}
+
+.header__nav__list {
+  align-items: center;
+}
+
+.header__nav__item {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+  align-items: center;
+
+  color: var(--color__1);
+}
+
+.header__search {
+  padding: 0;
+}
+
+.header__btn__enter {
+  margin-left: 20px;
+}
+
+.header__btn__enter {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 17px 43px;
+  gap: 4px;
+  border: 2px solid var(--color__1);
+  border-radius: 77px;
+}
+
+.header__search path {
+  stroke: var(--color__11);
+}
+
+.header__row__2 {
+  border-top: 1px solid var(--color__5);
+}
+
+.header__block__nav {
+  justify-content: space-between;
+}
+.header__nav__item__2 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: var(--color__1);
+}
+
+.header__nav__item__2 {
+  margin-right: 82px;
+}
+
+.btn__item__block {
+  padding-left: 42px;
+  padding-right: 48px;
+  border-left: 1px solid var(--color__5);
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #121723;
+}
+
+.btn__item__block:last-child {
+  border-right: 1px solid var(--color__5);
+}
+
+.btn__item__block span {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height */
+
+  align-items: center;
+
+  color: #a1a6b4;
+  margin-bottom: 5px;
+}
+
+.block__more__info {
+  margin-left: 52px;
+  min-height: 60px;
+  min-width: 46px;
+  align-items: center;
+  background-color: var(--color__5);
+}
+.header__more__btn {
+  text-align: center;
+  padding: 6px 3px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 100%;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #a1a6b4;
+}
+
+/* prime */
+
+.section__prime {
+  padding: 30px 0 40px 0;
+}
+
+.prime__block__left {
+  padding: 94px 0;
+}
+
+.prime__block__descr {
+  margin-bottom: 45px;
+}
+
+.prime__title {
+  margin: 0;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  /* or 60px */
+  margin-bottom: 14px;
+  color: var(--color__1);
+}
+
+.prime__title span {
+  font-family: "Muller";
+  font-style: italic;
+  font-weight: 400;
+}
+
+.prime__descr {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+  align-items: center;
+
+  color: var(--color__1);
+}
+
+.prime__btn {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  padding: 25px 54px;
+  gap: 10px;
+
+  text-align: center;
+
+  color: var(--color__14);
+  background: var(--color__11);
+  border-radius: 40px;
+}
+
+.prime__block__bg {
+  background-image: url("../img/microphone.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* podcast */
+
+.section__podcast {
+  background-color: #f2f2f2;
+  padding: 94px 0;
+}
+
+.podcast__title {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  /* identical to box height, or 48px */
+
+  color: #121723;
+  margin-bottom: 30px;
+}
+
+.podcast__list {
+  background-color: #f2f2f2;
+}
+
+.podcast__item:nth-child(1) {
+  background-image: url(../img/podcast__1.jpg);
+}
+
+.podcast__item:nth-child(2) {
+  background-image: url(../img/podcast__2.jpg);
+}
+
+.podcast__item:nth-child(3) {
+  background-image: url(../img/podcast__3.jpg);
+}
+
+.podcast__item:nth-child(4) {
+  background-image: url(../img/podcast__4.jpg);
+}
+
+.podcast__item:nth-child(5) {
+  background-image: url(../img/podcast__5.jpg);
+}
+
+.podcast__item:nth-child(6) {
+  background-image: url(../img/podcast__6.jpg);
+}
+
+.podcast__item:nth-child(7) {
+  background-image: url(../img/podcast__7.jpg);
+}
+
+.podcast__item:nth-child(8) {
+  background-image: url(../img/podcast__8.jpg);
+}
+
+.podcast__item {
+  position: relative;
+  padding-left: 112px;
+
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 140px;
+  background-color: #fff;
+  border: 2px solid crimson;
+}
+
+.podcast__block {
+  padding: 24px 0 24px 30px;
+}
+
+.podcast__time {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height */
+
+  color: #121723;
+}
+
+.podcast__song__title {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+  align-items: center;
+  margin-top: 8px;
+  color: #121723;
+}
+
+.podcast__perform {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  margin-top: 4px;
+  color: #a1a6b4;
+}
+
+.podcast__block {
+  justify-content: space-between;
+}
+
+.podcast__block__like {
+  padding-left: 30px;
+  border-top: 1px solid #e6e8ec;
+  padding-top: 10px;
+}
+
+.like__item {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #a1a6b4;
+
+  /* Inside auto layout */
+
+  order: 1;
+  flex-grow: 0;
+}
+
+.like__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.podcast__btn__block {
+  text-align: center;
+}
+
+.podcast__btn {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #6d31ee;
+}
