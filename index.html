@@ -21,7 +21,7 @@
             </a>
           </div>
           <div class="col-10">
-            <div class="header__block__nav flex">
+            <div class="header__block__nav__1 flex">
               <nav class="header__nav flex">
                 <ul class="header__nav__list list__reset flex">
                   <li class="header__nav__item">Подкасты</li>
@@ -62,33 +62,77 @@
           </div>
         </div>
 
-        <div class="row header__row__2">
-          <div class="col-12">
-            <div class="header__block__nav flex">
-              <nav class="header__nav__2">
-                <ul class="list__reset header__nav__list__2 flex">
-                  <li class="header__nav__item__2">Новости</li>
-                  <li class="header__nav__item__2">Блоги</li>
-                  <li class="header__nav__item__2">Топы</li>
-                  <li class="header__nav__item__2">Опросы</li>
-                  <li class="header__nav__item__2">Рейтинги</li>
-                  <li class="header__nav__item__2">Реклама</li>
-                </ul>
-              </nav>
-              <div class="header__block__btn">
-                <button class="btn__reset btn__item__block">
-                  <span>Ранее в эфире</span><br />"Музыка"
-                </button>
-                <button class="btn__reset btn__item__block">
-                  <span>Сейчас в эфире</span><br />"Как так?"
-                </button>
-              </div>
-              <div class="block__more__info flex">
-                <button class="btn__reset header__more__btn">12+</button>
-              </div>
+        <div class="row header__row__2 header__block__nav__2 flex">
+          <!-- <div class=" header__block__nav__2 flex"> -->
+          <nav class="col-7 header__nav__2 flex">
+            <ul class="list__reset header__nav__list__2 flex">
+              <li class="header__nav__item__2">Новости</li>
+              <li class="header__nav__item__2">Блоги</li>
+              <li class="header__nav__item__2">Топы</li>
+              <li class="header__nav__item__2">Опросы</li>
+              <li class="header__nav__item__2">Рейтинги</li>
+              <li class="header__nav__item__2">Реклама</li>
+            </ul>
+          </nav>
+          <div class="header__btn__wrapper flex col-5">
+            <div class="flex header__block__btn__2">
+              <button class="flex btn__reset btn__item__block">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_24531_5430)">
+                    <path
+                      d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
+                      fill="#A1A6B4"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_24531_5430">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="btn__fonts__1"
+                  ><span class="btn__fonts__2">Ранее в эфире</span
+                  ><br />"Музыка"</span
+                >
+              </button>
+              <button class="flex btn__reset btn__item__block">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_24531_5430)">
+                    <path
+                      d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
+                      fill="#A1A6B4"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_24531_5430">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="btn__fonts__1"
+                  ><span class="btn__fonts__2">Сейчас в эфире</span><br />"Как
+                  так?"</span
+                >
+              </button>
+            </div>
+            <div class="block__more__info__bg flex">
+              <button class="btn__reset header__more__btn">12+</button>
             </div>
           </div>
         </div>
+        <!-- </div> -->
       </div>
     </header>
     <main class="main">
@@ -118,13 +162,15 @@
           <h2 class="title__2 podcast__title">Подкасты</h2>
           <ul class="list__reset row podcast__list">
             <li class="col-6 podcast__item">
+              <time class="podcast__day__time">14 июня</time>
               <div class="podcast__item__block">
                 <div class="podcast__block flex">
                   <article class="podcast__block__descr">
-                    <p class="podcast__time">15:43</p>
+                    <time class="podcast__time">15:43</time>
                     <h3 class="podcast__song__title">Европа. XIX век</h3>
                     <p class="podcast__perform">Дмитрий Гутеберг</p>
                   </article>
+
                   <button class="btn__reset btn__play">
                     <svg
                       width="48"
@@ -201,10 +247,11 @@
               </div>
             </li>
             <li class="col-6 podcast__item">
+              <time class="podcast__day__time">11 июня</time>
               <div class="podcast__item__block">
                 <div class="podcast__block flex">
                   <article class="podcast__block__descr">
-                    <p class="podcast__time">5:32</p>
+                    <time class="podcast__time">5:32</time>
                     <h3 class="podcast__song__title">О музыке</h3>
                     <p class="podcast__perform">Дмитрий Гутенберг</p>
                   </article>
@@ -284,10 +331,11 @@
               </div>
             </li>
             <li class="col-6 podcast__item">
+              <time class="podcast__day__time">8 июня</time>
               <div class="podcast__item__block">
                 <div class="podcast__block flex">
                   <article class="podcast__block__descr">
-                    <p class="podcast__time">8:54</p>
+                    <time class="podcast__time">8:54</time>
                     <h3 class="podcast__song__title">Люди сегодня</h3>
                     <p class="podcast__perform">Анна Васильева</p>
                   </article>
@@ -367,10 +415,11 @@
               </div>
             </li>
             <li class="col-6 podcast__item">
+              <time class="podcast__day__time">5 июня</time>
               <div class="podcast__item__block">
                 <div class="podcast__block flex">
                   <article class="podcast__block__descr">
-                    <p class="podcast__time">9:04</p>
+                    <time class="podcast__time">9:04</time>
                     <h3 class="podcast__song__title">Хэллоу, Африка!</h3>
                     <p class="podcast__perform">Пётр Дмитриевский</p>
                   </article>
@@ -450,10 +499,11 @@
               </div>
             </li>
             <li class="col-6 podcast__item">
+              <time class="podcast__day__time">2 июня</time>
               <div class="podcast__item__block">
                 <div class="podcast__block flex">
                   <article class="podcast__block__descr">
-                    <p class="podcast__time">7:03</p>
+                    <time class="podcast__time">7:03</time>
                     <h3 class="podcast__song__title">Обо всём</h3>
                     <p class="podcast__perform">Пётр Дмитриевский</p>
                   </article>
@@ -533,10 +583,11 @@
               </div>
             </li>
             <li class="col-6 podcast__item">
+              <time class="podcast__day__time">28 мая</time>
               <div class="podcast__item__block">
                 <div class="podcast__block flex">
                   <article class="podcast__block__descr">
-                    <p class="podcast__time">9:15</p>
+                    <time class="podcast__time">9:15</time>
                     <h3 class="podcast__song__title">Физика цвета</h3>
                     <p class="podcast__perform">Татьяна Флеганова</p>
                   </article>
@@ -616,10 +667,11 @@
               </div>
             </li>
             <li class="col-6 podcast__item">
+              <time class="podcast__day__time">22 мая</time>
               <div class="podcast__item__block">
                 <div class="podcast__block flex">
                   <article class="podcast__block__descr">
-                    <p class="podcast__time">16:04</p>
+                    <time class="podcast__time">16:04</time>
                     <h3 class="podcast__song__title">Источник звука</h3>
                     <p class="podcast__perform">Пётр Дмитриевский</p>
                   </article>
@@ -699,10 +751,11 @@
               </div>
             </li>
             <li class="col-6 podcast__item">
+              <time class="podcast__day__time">18 мая</time>
               <div class="podcast__item__block">
                 <div class="podcast__block flex">
                   <article class="podcast__block__descr">
-                    <p class="podcast__time">6:55</p>
+                    <time class="podcast__time">6:55</time>
                     <h3 class="podcast__song__title">Правила этикета</h3>
                     <p class="podcast__perform">Татьяна Флеганова</p>
                   </article>
@@ -816,6 +869,8 @@
               <ul class="row list__reset transfer__list flex">
                 <li class="transfer__item col-4">
                   <div class="transfer__block__list">
+                    <img src="img/transfer__1.jpg" alt="logo__transfer" />
+
                     <div class="transfer__block__descr">
                       <article class="transfer__article">
                         <h3 class="transfer__title__3">О людях</h3>
@@ -843,6 +898,8 @@
                 </li>
                 <li class="transfer__item col-4">
                   <div class="transfer__block__list">
+                    <img src="img/transfer__2.jpg" alt="logo__transfer" />
+
                     <div class="transfer__block__descr">
                       <article class="transfer__article">
                         <h3 class="transfer__title__3">Графомания td</h3>
@@ -870,6 +927,8 @@
                 </li>
                 <li class="transfer__item col-4">
                   <div class="transfer__block__list">
+                    <img src="img/transfer__3.jpg" alt="logo__transfer" />
+
                     <div class="transfer__block__descr">
                       <article class="transfer__article">
                         <h3 class="transfer__title__3">Не Рим, Не троя</h3>
@@ -895,6 +954,8 @@
                 </li>
                 <li class="transfer__item col-4">
                   <div class="transfer__block__list">
+                    <img src="img/transfer__4.jpg" alt="logo__transfer" />
+
                     <div class="transfer__block__descr">
                       <article class="transfer__article">
                         <h3 class="transfer__title__3">Эрудит</h3>
@@ -920,6 +981,8 @@
                 </li>
                 <li class="transfer__item col-4">
                   <div class="transfer__block__list">
+                    <img src="img/transfer__5.jpg" alt="logo__transfer" />
+
                     <div class="transfer__block__descr">
                       <article class="transfer__article">
                         <h3 class="transfer__title__3">Тонкости эпох</h3>
@@ -945,6 +1008,8 @@
                 </li>
                 <li class="transfer__item col-4">
                   <div class="transfer__block__list">
+                    <img src="img/transfer__6.jpg" alt="logo__transfer" />
+
                     <div class="transfer__block__descr">
                       <article class="transfer__article">
                         <h3 class="transfer__title__3">Живые мысли</h3>
@@ -1629,6 +1694,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__1.jpg" alt="Ploho" />
+                    <img class="flag" src="img/RU.svg" alt="russia" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">Ploho</h3>
                       <p class="playlist__item__descr">3 последних альбома</p>
@@ -1638,6 +1704,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__2.jpg" alt="Molcht Doma" />
+                    <img class="flag" src="img/RU.svg" alt="russia" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">Molcht Doma</h3>
                       <p class="playlist__item__descr">Все песни</p>
@@ -1647,6 +1714,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__3.jpg" alt="Motorama" />
+                    <img class="flag" src="img/RU.svg" alt="russia" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">Motorama</h3>
                       <p class="playlist__item__descr">Все синглы</p>
@@ -1656,6 +1724,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__4.jpg" alt="Human Tetris" />
+                    <img class="flag" src="img/RU.svg" alt="russia" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">Human Tetris</h3>
                       <p class="playlist__item__descr">3 последних альбома</p>
@@ -1665,6 +1734,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__5.jpg" alt="Буерак" />
+                    <img class="flag" src="img/RU.svg" alt="russia" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">Буерак</h3>
                       <p class="playlist__item__descr">Все EP</p>
@@ -1674,6 +1744,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__6.jpg" alt="Июльские Дни" />
+                    <img class="flag" src="img/RU.svg" alt="russia" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">Июльские Дни</h3>
                       <p class="playlist__item__descr">Альбом "Колокол"</p>
@@ -1683,6 +1754,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__7.jpg" alt="Joy Division" />
+                    <img class="flag" src="img/UK.svg" alt="UK" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">Joy Division</h3>
                       <p class="playlist__item__descr">Лучшее за всё время</p>
@@ -1692,6 +1764,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__8.jpg" alt="The Cure" />
+                    <img class="flag" src="img/UK.svg" alt="UK" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">The Cure</h3>
                       <p class="playlist__item__descr">Лучшее за всё время</p>
@@ -1701,6 +1774,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__9.jpg" alt="The Smiths" />
+                    <img class="flag" src="img/UK.svg" alt="UK" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">The Smiths</h3>
                       <p class="playlist__item__descr">Перио 1984-1988</p>
@@ -1710,6 +1784,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__10.jpg" alt="New Order" />
+                    <img class="flag" src="img/UK.svg" alt="UK" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">New Order</h3>
                       <p class="playlist__item__descr">Хиты</p>
@@ -1719,6 +1794,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__11.jpg" alt="Bauhaus" />
+                    <img class="flag" src="img/UK.svg" alt="UK" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">Bauhaus</h3>
                       <p class="playlist__item__descr">Все синглы</p>
@@ -1728,6 +1804,7 @@
                 <li class="playlist__item col-3">
                   <div class="playlist__item__wrapper">
                     <img src="img/postpunt__12.jpg" alt="Cang Of Four" />
+                    <img class="flag" src="img/UK.svg" alt="UK" />
                     <div class="playlist__wrapper__descr">
                       <h3 class="song__title">Cang Of Four</h3>
                       <p class="playlist__item__descr">3 последних альбома</p>
@@ -1742,7 +1819,15 @@
       <section class="section__offer">
         <div class="container">
           <div class="row">
-            <div class="col-7 offer__bg"></div>
+            <div class="col-7 offer__bg">
+              <!-- <img class="new" src="img/new.svg" alt="new" />
+
+              <img
+                class="radio"
+                src="img/radio-removebg-preview.png"
+                alt="radio"
+              /> -->
+            </div>
             <div class="col-5">
               <div class="offer__wrapper flex">
                 <article class="offer__descr">
@@ -1840,28 +1925,40 @@
           <div class="swiper">
             <div class="row swiper-wrapper">
               <div class="col-3 swiper-slide slide-1">
-                <h3 class="about__us__name">Дмитрий Гутенберг</h3>
-                <p class="about__us__people__descr">
-                  Эксперт (ну, почти) по всем вопросам (почти)
-                </p>
+                <img src="img/people__1.jpg" alt="people__1" />
+                <article class="swiper__descr">
+                  <h3 class="about__us__name">Дмитрий Гутенберг</h3>
+                  <p class="about__us__people__descr">
+                    Эксперт (ну, почти) по всем вопросам (почти)
+                  </p>
+                </article>
               </div>
               <div class="col-3 swiper-slide slide-1">
-                <h3 class="about__us__name">Дмитрий Гутенберг</h3>
-                <p class="about__us__people__descr">
-                  Эксперт (ну, почти) по всем вопросам (почти)
-                </p>
+                <img src="img/people__2.jpg" alt="people__2" />
+                <article class="swiper__descr">
+                  <h3 class="about__us__name">Дмитрий Гутенберг</h3>
+                  <p class="about__us__people__descr">
+                    Эксперт (ну, почти) по всем вопросам (почти)
+                  </p>
+                </article>
               </div>
               <div class="col-3 swiper-slide slide-1">
-                <h3 class="about__us__name">Дмитрий Гутенберг</h3>
-                <p class="about__us__people__descr">
-                  Эксперт (ну, почти) по всем вопросам (почти)
-                </p>
+                <img src="img/people__3.jpg" alt="people__3" />
+                <article class="swiper__descr">
+                  <h3 class="about__us__name">Дмитрий Гутенберг</h3>
+                  <p class="about__us__people__descr">
+                    Эксперт (ну, почти) по всем вопросам (почти)
+                  </p>
+                </article>
               </div>
               <div class="col-3 swiper-slide slide-1">
-                <h3 class="about__us__name">Дмитрий Гутенберг</h3>
-                <p class="about__us__people__descr">
-                  Эксперт (ну, почти) по всем вопросам (почти)
-                </p>
+                <img src="img/people__4.jpg" alt="people__4" />
+                <article class="swiper__descr">
+                  <h3 class="about__us__name">Дмитрий Гутенберг</h3>
+                  <p class="about__us__people__descr">
+                    Эксперт (ну, почти) по всем вопросам (почти)
+                  </p>
+                </article>
               </div>
             </div>
           </div>
@@ -1871,32 +1968,36 @@
               action="https://postman-echo.com/post"
               method="POST"
             >
-              <div class="request__common">
-                <textarea
-                  class="form-textarea"
-                  name="comment"
-                  placeholder="Что скажете?"
-                  aria-label="Напишите дополнительную информацию"
-                ></textarea>
-                <input
-                  class="form-input"
-                  type="text"
-                  name="name"
-                  placeholder="Имя"
-                  required
-                  aria-label="Введите имя"
-                />
-                <input
-                  class="form-input"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                  aria-label="Введите свой E-mail (почту)*"
-                />
+              <div class="request__common row">
+                <div class="col-12">
+                  <textarea
+                    class="form-textarea"
+                    name="comment"
+                    placeholder="Что скажете?"
+                    aria-label="Напишите дополнительную информацию"
+                  ></textarea>
+                </div>
+                <div class="col-9">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    placeholder="Имя"
+                    required
+                    aria-label="Введите имя"
+                  />
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    aria-label="Введите свой E-mail (почту)*"
+                  />
+                </div>
               </div>
-              <div class="btn__form">
-                <button class="btn__reset btn__form">Отправить</button>
+              <div class="btn__form__block">
+                <button class="btn__reset flex btn__form">Отправить</button>
                 <label class="form-check">
                   <input type="checkbox" required />
                   Согласен на обработку данных
@@ -1909,7 +2010,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="row">
+        <div class="row footer__block flex">
           <div class="col-2 footer__link">
             <a href="#" class="footer__logo__link">
               <svg
@@ -1946,7 +2047,7 @@
               </svg>
             </a>
             <nav class="footer__link__nav">
-              <ul class="list__reset">
+              <ul class="list__reset flex footer__list__link">
                 <li class="footer__social__link">
                   <a href="#" class="social__link">
                     <svg
@@ -2022,40 +2123,33 @@
           </div>
           <div class="col-5 footer__nav__block">
             <nav class="footer__nav">
-              <ul class="footer__nav__list list__reset">
-                <li class="footer__nav__item">
+              <ul class="footer__nav__list flex list__reset">
+                <li class="footer__nav__item flex">
                   <a href="#">Подкасты</a>
-                </li>
-                <li class="footer__nav__item">
                   <a href="#">Плейлисты</a>
-                </li>
-                <li class="footer__nav__item">
                   <a href="#">Новости</a>
                 </li>
-                <li class="footer__nav__item">
+
+                <li class="footer__nav__item flex">
                   <a href="#">Передачи</a>
-                </li>
-                <li class="footer__nav__item">
                   <a href="#">Сетка</a>
-                </li>
-                <li class="footer__nav__item">
                   <a href="#">Блоги</a>
                 </li>
-                <li class="footer__nav__item">
+
+                <li class="footer__nav__item flex">
                   <a href="#">Гости</a>
-                </li>
-                <li class="footer__nav__item">
                   <a href="#">О&nbsp;нас</a>
-                </li>
-                <li class="footer__nav__item">
                   <a href="#">Топы</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
-        <div class="row">
-          <p class="footer__text">W-WAVE ® 2021</p>
+
+        <div class="row footer__wrapper__bottom">
+          <div class="col-12 footer__block__bottom">
+            <p class="footer__text">W-WAVE ® 2021</p>
+          </div>
         </div>
       </div>
     </footer>
