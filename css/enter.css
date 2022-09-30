@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller-regular.eot");
+  src: local("Muller Regular"), local("muller-regular"),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller-regular-italic.eot");
+  src: local("Muller Regular Italic"), local("muller-regular-italic"),
+    url("../fonts/MullerRegularItalic.woff2") format("woff2"),
+    url("../fonts/MullerRegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller-medium.eot");
+  src: local("Muller Medium"), local("muller-medium"),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller-bold.eot");
+  src: local("Muller Bold"), local("muller-bold"),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* settings */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn__reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list__reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* enter */
+
+.enter {
+  display: block;
+  background: #121723;
+  width: 824px;
+  height: 655px;
+  padding: 60px;
+  position: relative;
+}
+
+.exit {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.enter__title {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  /* identical to box height, or 48px */
+
+  /* white */
+  margin-bottom: 17px;
+  color: #ffffff;
+}
+
+.enter__descr {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* white */
+
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.registrantion {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+  display: flex;
+  align-items: center;
+
+  color: #6d31ee;
+}
+
+.form__enter {
+  flex-direction: column;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(230, 232, 236, 0.4);
+  margin-bottom: 30px;
+}
+
+.form-input {
+  width: 526px;
+  height: 70px;
+  background-color: inherit;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  padding: 10px 10px 10px 32px;
+  gap: 10px;
+
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #a1a6b4;
+  margin-bottom: 30px;
+}
+
+.btn__form__enter {
+  background: #6d31ee;
+  border-radius: 40px;
+  align-items: center;
+  padding: 25px 54px;
+  gap: 10px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+  width: 167px;
+  height: 70px;
+}
+
+.enter__social__link__descr {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* white */
+
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.item__enter:not(:first-child) {
+  margin-left: 40px;
+}
+
+.facebook path {
+  fill: #a1a6b4;
+}
+
+.vk rect {
+  fill: #a1a6b4;
+}
+
+.vk path {
+  fill: #121723;
+}
+
+.google rect {
+  fill: #a1a6b4;
+}
+
+.google path {
+  fill: #121723;
+}
