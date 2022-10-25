@@ -1,3 +1,25 @@
+let burger = document.querySelector(".burger");
+let menu = document.querySelector(".header__nav");
+let menu__1 = document.querySelector(".header__nav__2");
+let menuLinks = menu.querySelectorAll(".header__link");
+
+burger.addEventListener("click", function () {
+  burger.classList.toggle("burger--active");
+  menu.classList.toggle("header__nav--active");
+  menu__1.classList.toggle("header__nav__1--active");
+  document.body.classList.toggle("stop-scroll");
+});
+
+menuLinks.forEach(function (el) {
+  el.addEventListener("click", function () {
+    burger.classList.remove("burger--active");
+
+    menu.classList.remove("header__nav--active");
+    menu__1.classList.remove("header__nav__1--active");
+    document.body.classList.remove("stop-scroll");
+  });
+});
+
 // пошук
 
 let search = document.querySelector(".header__search");
@@ -18,21 +40,29 @@ exit__search.forEach(function (el) {
   });
 });
 
-let exitBtn = document.querySelector(".header__btn__enter");
+let exitBtn = document.querySelectorAll(".header__btn__enter");
 let enterBlock = document.querySelector(".enter");
 
 let outBtn = document.querySelectorAll(".close__btn");
-exitBtn.addEventListener("click", function () {
-  exitBtn.classList.toggle("header__enter--active");
-  enterBlock.classList.toggle("enter--active");
-  document.body.classList.toggle("stop-scroll");
-});
+exitBtn.forEach(function (el) {
+  el.addEventListener("click", function () {
+    el.classList.toggle("header__enter--active");
+    enterBlock.classList.toggle("enter--active");
+    document.body.classList.toggle("stop-scroll");
+  });
+})
+
+
 
 outBtn.forEach(function (el) {
   el.addEventListener("click", function () {
-    exitBtn.classList.remove("header__enter--active");
-    enterBlock.classList.remove("enter--active");
+    exitBtn.forEach(function (e) {
+      e.addEventListener("click", function () {
+        e.classList.remove("header__enter--active");
+      })
+      enterBlock.classList.remove("enter--active");
     document.body.classList.remove("stop-scroll");
+    })
   });
 });
 
@@ -89,9 +119,13 @@ new Accordion(".accordion-list", {
 });
 
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 4,
+  slidesPerView: 2,
   slidesPerGroup: 1,
-
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+    },
+  },
   spaceBetween: 30,
   loop: true,
   navigation: {
