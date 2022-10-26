@@ -20,6 +20,9 @@ menuLinks.forEach(function (el) {
   });
 });
 
+
+let wrapperPlay = document.querySelector(".btn__header__play")
+
 // пошук
 
 let search = document.querySelector(".header__search");
@@ -110,6 +113,8 @@ const element = document.querySelector("select");
 const choices = new Choices(element, {
   searchEnabled: false,
 });
+
+
 
 new Accordion(".accordion-list", {
   elementClass: "accordion",

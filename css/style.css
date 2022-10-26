@@ -306,7 +306,9 @@ p {
 .header__search--active .search {
   z-index: 100000;
 }
-
+.btn__header__play {
+  display: none;
+}
 .enter-search--active {
   visibility: visible;
   transform: none;
@@ -333,7 +335,6 @@ p {
   display: block;
   background: #121723;
   max-width: 824px;
-  height: 655px;
   padding: 60px;
   position: relative;
 }
@@ -358,6 +359,7 @@ p {
 }
 
 .enter__descr {
+  display: block;
   font-family: "Muller";
   font-style: normal;
   font-weight: 400;
@@ -371,10 +373,18 @@ p {
   /* white */
 
   color: #ffffff;
+
+}
+
+.enter article {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
+
 }
 
 .registrantion {
+  display: block;
   font-family: "Muller";
   font-style: normal;
   font-weight: 400;
@@ -384,7 +394,6 @@ p {
 
   display: flex;
   align-items: center;
-
   color: #6d31ee;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
@@ -416,8 +425,8 @@ p {
 }
 
 .form-input-enter {
-  width: 526px;
-  height: 70px;
+  max-width: 526px;
+  min-height: 70px;
   background-color: inherit;
   border: 1px solid #ffffff;
   border-radius: 40px;
@@ -451,8 +460,8 @@ p {
   text-align: center;
 
   color: #ffffff;
-  width: 167px;
-  height: 70px;
+  max-width: 167px;
+  min-height: 70px;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out,
     background-color 0.3s ease-in-out;
 }
