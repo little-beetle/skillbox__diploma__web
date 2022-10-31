@@ -1,3 +1,9 @@
+@media (max-width: 1320px) {
+  .podcast__wrapper__descr {
+    min-width: 71%;
+  }
+}
+
 @media (max-width: 1280px) {
   .enter {
     left: 10%;
@@ -65,8 +71,14 @@
   .about__us__bt__1__none {
     display: none;
   }
+
+  .mic__bg img {
+    margin-top: 10%;
+  }
   .new__bg {
-    bottom: 26%;
+    height: 100px;
+    top: 10%;
+    width: 100px;
   }
 
   .block__more__info__bg {
@@ -331,11 +343,16 @@
 
   .offer__bg {
     max-width: 100%;
-    min-height: 540px;
     margin-bottom: 50px;
   }
   .new__bg {
-    bottom: 35%;
+    height: 160px;
+    top: 0%;
+    width: 160px;
+  }
+
+  .mic__bg img {
+    margin-top: 0%;
   }
 
 }
@@ -386,8 +403,8 @@
     padding-right: 0px;
   }
 
-  .podcast__item__block {
-    padding-left: 132px;
+  .podcast__wrapper__descr {
+    min-width: 81%;
   }
 
   .section__transfer {
@@ -464,10 +481,83 @@
     height: 100vh;
   }
 
+
+
   .wrapper__btn__play {
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    min-height: 45px;
+  }
+  .header__block__btn__2 {
+    max-width: 100%;
+  }
+
+  .header__btn__wrapper {
+    display: block;
+    background-color: #fff;
+    bottom: 45%;
+    transform: translateY(-420%);
+    left: 0;
+    overflow-y: auto;
+    max-width: 100%;
+    visibility: hidden;
+    transition: visibility .5s ease-in-out, transform 0.5s ease-in-out;
+
+  }
+
+  .wrapper__btn__play--active {
+    visibility: visible;
+    transform: none;
+    min-height: 45px;
+  }
+  .header__btn__wrapper--active {
+    visibility: visible;
+  }
+  .header__wrapper__btn--active {
+    background-color: rgba(230, 232, 236, 0.4);
+    margin-bottom: 10px;
+  }
+  .header__wrapper__btn--active .wrapper__btn__play {
+    z-index: 100000;
+  }
+  .btn__fonts__1 {
+    font-size: 14px;
+  }
+  .play__btn__1,
+  .play__btn__2  {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+    margin-top: 11px;
+  }
+  .btn__fonts__2 {
+    font-size: 10px;
+  }
+  .header__block__btn__2 {
     justify-content: center;
   }
 
+  .btn__item__block {
+    text-align: start;
+    min-width: 50%;
+    flex-direction: column;
+  }
+
+  .play__btn__1,
+  .play__btn__2 {
+    transform: translateX(-20px);
+  }
+  .header__block__btn__2 .btn__item__block:first-child {
+    border-left: none;
+}
+.header__block__btn__2 .btn__item__block:last-child {
+  border-right: none;
+}
+
+.podcast__item__block {
+  flex-direction: column;
+}
   .btn__header__play {
     display: block;
     color: #6D31EE;
@@ -478,10 +568,13 @@
     line-height: 16px;
     padding-left: 20px;
   }
-  .header__btn__wrapper {
-    /* display: block; */
-    /* visibility: hidden; */
-    position: absolute;
+
+  .podcast__item__pic {
+    min-height: 180px;
+    min-width: 256px;
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
   }
   .btn__header__play svg {
     transform: translateY(2px)
@@ -662,10 +755,7 @@
     font-size: 24px;
   }
 
-  .podcast__item__block {
-    padding-left: 0;
-    padding-top: 72px;
-  }
+
 
   .podcast__day__time {
     bottom: inherit;
@@ -674,8 +764,12 @@
     font-size: 16px;
     padding: 17px 30px;
   }
-
-
+  .podcast__item:nth-child(n + 5) {
+    display: none;
+  }
+  .podcast__item.podcast__item--visible {
+    display: block;
+  }
   .section__transfer {
     padding-top: 54px;
   }
@@ -713,6 +807,349 @@
   .transfer__link {
     font-size: 12px;
   }
+
+  .transfer__footer__block {
+    background-position: top 32px left 30px;
+    padding-left: 110px;
+  }
+
+  .transfer__footer__descr {
+    min-width: auto;
+  }
+  .section__guest {
+    padding: 54px 0;
+  }
+
+  .guest__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .guest__descr {
+    font-size: 14px;
+  }
+
+  .guest__text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .guest__btn {
+    font-size: 16px;
+  }
+
+
+
+  .more__info {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+  }
+
+  .accordion__btn {
+    width: 26px;
+    height: 26px;
+  }
+
+  .guest__accordion__list {
+    justify-content:inherit;
+  }
+  .guest__accordion__item:last-child .guest__accordion__btn {
+    margin-bottom: 30px;
+  }
+  .guest__accordion__item:last-child {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+
+    padding-left: 22px !important;
+  }
+
+  .guest__accordion__item:last-child .guest__accordion__btn:last-child {
+    margin-top: 0;
+  }
+
+  .guest__accordion__btn {
+    font-size: 14px;
+  }
+
+  .guest__accordion__list .guest__accordion__item:first-child,
+  .guest__accordion__list .guest__accordion__item:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+
+  .guest__accordion__btn:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .guest__accordion__item:last-child .guest__accordion__btn:last-child {
+    margin-bottom: 0px;
+  }
+  .guest__accordion__list {
+    padding: 20px 0;
+  }
+
+  .guest__link svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .guest__content__name {
+    font-size: 20px;
+  }
+  .guest__content__descr {
+    font-size: 16px;
+  }
+
+
+  .section__playlist {
+    padding: 54px 0;
+  }
+
+  .title__playlist {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+  .radion__btn__list {
+    margin-top: 0px;
+}
+
+  .radio__btn__list__right {
+    margin-left: 0px;
+  }
+  .playlist__genre {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .radion__btn__list {
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-top: 10px;
+  }
+  .radio__btn__list__left,
+  .radio__btn__list__right {
+    flex-direction: row;
+  }
+  .radio__btn__list__right .radio__btn__item,
+  .radio__btn__list__left .radio__btn__item:not(:first-child) {
+    margin-left: 15px;
+  }
+
+  .radio__btn__item {
+    margin-bottom: 0px;
+    text-align: center;
+
+  }
+
+
+  .radio__btn__item {
+    height: inherit;
+  }
+
+  .radio__btn__item label {
+      position: relative;
+
+      cursor: pointer;
+      padding-left: 22.5px;
+      padding-right: 22.5px;
+  }
+
+  .radio-input + .custom__radio__check {
+    width: 100%;
+    height: 35px;
+    top: -8px;
+    border-radius: 77px;
+  }
+
+  .radio-input + .custom__radio__check:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    width: 104%;
+    height: 35px;
+    border: 2px solid #6D31EE;
+    background-color: #6D31EE;
+    border-radius: 77px;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+  }
+  .radio-input:checked + .custom__radio__check {
+    background-color: inherit;
+    color: white;
+  }
+
+  .radio__btn__descr {
+    margin: 0;
+    padding: 0;
+  }
+
+  .radio-input:checked  .radio__btn__descr {
+    color: white
+  }
+
+  .radio__btn__block__wrapper label:last-child {
+    margin-bottom: 0px;
+  }
+  .radio__btn__item div {
+    order: 1;
+  }
+
+  .radio__btn__item .radio-input {
+    order: 2;
+  }
+  .radio-input:checked + div {
+    color: white
+  }
+
+
+  .radio-input:checked + .radio__check__descr:before {
+    opacity: 1;
+  }
+  .playlist__item__wrapper {
+    flex-direction: column;
+    height: inherit;
+  }
+  .playlist__wrapper__descr {
+    width: inherit;
+    margin-top: 0px;
+    transform: translateY(-5px)
+  }
+
+  .song__title {
+    font-size: 12px;
+
+  }
+
+  .playlist__item__descr {
+    font-size: 9px;
+
+  }
+
+  .playlist__descr,
+  .playlist__years {
+    font-size: 12px;
+  }
+
+  .section__offer {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+
+  .new__bg {
+    height: 100px;
+    width: 100px;
+  }
+  .offer__bg {
+    margin-bottom: 36px;
+  }
+
+  .title__offer {
+    font-size: 24px;
+  }
+
+  .offer__text {
+    font-size: 14px;
+
+  }
+
+  .offer__cost {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .offer__text__2 {
+    margin-bottom: 12px;
+  }
+
+  .btn__offer {
+    font-size: 16px;
+    padding: 11px 15px 17px 15px;
+  }
+
+  .btn__offer svg {
+    transform: translateY(4px);
+  }
+
+  .section__about__us {
+    padding: 54px 0;
+  }
+  .about__us__title {
+    font-size: 24px;
+  }
+
+  .about__us__text__1 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .about__us__text__2 {
+    font-size: 14px;
+  }
+  .section__about__us {
+    background-image: none;
+
+
+  }
+  .about__us__bg__1  {
+    display: none
+  }
+
+  .form-textarea {
+    font-size: 16px;
+    padding: 17px 24px;
+  }
+  .btn__form {
+    padding: 17px 45px;
+    font-size: 16px;
+  }
+
+  .footer {
+    padding-top: 54px;
+    background-position: bottom 30px center;
+  }
+  .footer__link {
+    padding-bottom: 57px;
+  }
+  .social__link svg {
+    width: 30px;
+    height: 30px;
+  }
+  .footer__nav__block {
+    margin-top: 0px;
+  }
+  .footer__block  {
+    margin-bottom: 6px;
+  }
+  .footer__nav__item a:not(:nth-child(3)) {
+    margin-bottom: 0px;
+}
+  .footer__link {
+    padding-bottom: 24px;
+    font-size: 14px;
+}
+  .footer__nav__block {
+    padding-top: 30px;
+
+    background-color: rgba(18, 23, 35, 1)
+
+  }
+  .footer__wrapper__bottom {
+    padding-top: 25px;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 610px) {
@@ -722,4 +1159,21 @@
   .header__nav__list__2 {
     padding-left: 0px;
 }
+
+
+}
+
+@media (max-width: 575px) {
+  .input__form__1 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .podcast__item__pic {
+    min-height: 120px;
+  }
+  .new__bg {
+    height: 62px;
+    width: 62px;
+  }
 }

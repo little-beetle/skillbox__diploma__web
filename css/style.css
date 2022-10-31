@@ -306,7 +306,7 @@ p {
 .header__search--active .search {
   z-index: 100000;
 }
-.btn__header__play {
+.wrapper__btn__play {
   display: none;
 }
 .enter-search--active {
@@ -876,7 +876,7 @@ p {
   color: var(--color__1);
 }
 
-.prime__title span {
+.prime__title .custom__radio__check {
   font-family: "Muller";
   font-style: italic;
   font-weight: 400;
@@ -1041,35 +1041,42 @@ p {
   fill: #fff;
 }
 
-.podcast__item:nth-child(1) .podcast__item__block {
-  background-image: url(../img/podcast__1.jpg);
+.podcast__item__pic {
+  min-width: 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.podcast__item:nth-child(2) .podcast__item__block {
+.podcast__item:nth-child(1) .podcast__item__pic {
+  background-image: url(../img/podcast__1.jpg);
+
+}
+
+.podcast__item:nth-child(2) .podcast__item__pic {
   background-image: url(../img/podcast__2.jpg);
 }
 
-.podcast__item:nth-child(3) .podcast__item__block {
+.podcast__item:nth-child(3) .podcast__item__pic {
   background-image: url(../img/podcast__3.jpg);
 }
 
-.podcast__item:nth-child(4) .podcast__item__block {
+.podcast__item:nth-child(4) .podcast__item__pic {
   background-image: url(../img/podcast__4.jpg);
 }
 
-.podcast__item:nth-child(5) .podcast__item__block {
+.podcast__item:nth-child(5) .podcast__item__pic {
   background-image: url(../img/podcast__5.jpg);
 }
 
-.podcast__item:nth-child(6) .podcast__item__block {
+.podcast__item:nth-child(6) .podcast__item__pic {
   background-image: url(../img/podcast__6.jpg);
 }
 
-.podcast__item:nth-child(7) .podcast__item__block {
+.podcast__item:nth-child(7) .podcast__item__pic {
   background-image: url(../img/podcast__7.jpg);
 }
 
-.podcast__item:nth-child(8) .podcast__item__block {
+.podcast__item:nth-child(8) .podcast__item__pic {
   background-image: url(../img/podcast__8.jpg);
 }
 
@@ -1092,10 +1099,12 @@ p {
   z-index: 1;
   bottom: 0;
 }
-
+.podcast__wrapper__descr {
+  min-width: 80%;
+}
 .podcast__item__block {
   position: relative;
-  padding-left: 112px;
+  /* padding-left: 112px; */
 
   background-position: left;
   background-repeat: no-repeat;
@@ -1670,7 +1679,6 @@ p {
 }
 
 .guest__title {
-  padding: 0;
   font-family: "Muller";
   font-style: normal;
   font-weight: 400;
@@ -1740,9 +1748,12 @@ p {
 .accordion__item:hover .accordion__btn {
   transform: rotate(180deg);
 } */
+.list__reset__guest {
+  margin: 0;
+  list-style: none;
+}
 
 .guest__descr {
-  padding: 0;
 
   font-family: "Muller";
   font-style: normal;
@@ -1755,7 +1766,6 @@ p {
 }
 
 .guest__text {
-  padding: 0;
 
   font-family: "Muller";
   font-style: normal;
@@ -2009,7 +2019,7 @@ label {
   display: none;
 }
 
-.radio-input + span {
+.radio-input + .custom__radio__check {
   position: absolute;
   top: -5px;
   left: 0;
@@ -2021,28 +2031,28 @@ label {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.radio-input:hover + span {
+.radio-input:hover + .custom__radio__check {
   border-color: #6d31ee;
 }
 
-.radio-input:focus + span {
+.radio-input:focus + .custom__radio__check {
   background-color: #d2d5dd;
   border-color: #6d31ee;
 }
 
-.radio-input + span:active {
+.radio-input + .custom__radio__check:active {
   background-color: #6d31ee;
 }
-.radio-input:checked + span {
+.radio-input:checked + .custom__radio__check {
   background-color: #6d31ee;
   border-color: #6d31ee;
 }
-.radio-input:active + span {
+.radio-input:active + .custom__radio__check {
   background-color: #d2d5dd;
   border-color: #6d31ee;
 }
 
-.radio-input + span:before {
+.radio-input + .custom__radio__check:before {
   content: "";
   position: absolute;
   top: 5px;
@@ -2058,7 +2068,7 @@ label {
   transition: opacity 0.3s ease-in-out;
 }
 
-.radio-input:checked + span:before {
+.radio-input:checked + .custom__radio__check:before {
   opacity: 1;
 }
 
@@ -2254,7 +2264,7 @@ label {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-image: url("../img/radio-removebg-preview.png");
+  /* background-image: url("../img/radio-removebg-preview.png"); */
 
   overflow: hidden;
 }
@@ -2262,16 +2272,17 @@ label {
 .mic__bg img {
   object-fit: contain;
   /* overflow: hidden; */
+  width: 100%;
 }
 
 .new__bg {
   position: absolute;
-  bottom: 35%;
+  top: 0;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100%;
-  width: 25%;
+  height: 160px;
+  width: 160px;
   background-image: url("../img/new.svg");
 }
 /*
@@ -2610,6 +2621,7 @@ label {
 .form-textarea:hover,
 .form-input:hover {
   background: #292e39;
+
 }
 
 .form-textarea:focus,
@@ -2631,6 +2643,9 @@ label {
   font-size: 12px;
   line-height: 12px;
 }
+
+
+
 
 .btn__form {
   font-family: "Muller";
@@ -2687,7 +2702,7 @@ label {
   position: relative;
 }
 
-.custom__checkbox + span {
+.custom__checkbox + .custom__radio__check {
   position: absolute;
   top: 0px;
   left: 0;
@@ -2698,7 +2713,7 @@ label {
   transform: translateY(-2px);
 }
 
-.custom__checkbox + span:before {
+.custom__checkbox + .custom__radio__check:before {
   content: url(../img/checkbox.svg);
   position: absolute;
   top: 1;
@@ -2708,10 +2723,10 @@ label {
   transition: opacity 0.3s ease-in-out;
 }
 
-.custom__checkbox:checked + span:before {
+.custom__checkbox:checked + .custom__radio__check:before {
   opacity: 1;
 }
-.custom__checkbox:checked + span {
+.custom__checkbox:checked + .custom__radio__check {
   border-color: #fff;
 }
 /* footer */
@@ -2785,7 +2800,12 @@ label {
   color: #ffffff;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
-
+.footer__nav__item {
+  flex-direction: column;
+}
+.footer__nav__item  {
+  flex-direction: row;
+}
 .footer__link {
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }

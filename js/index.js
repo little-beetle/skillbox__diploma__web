@@ -20,8 +20,21 @@ menuLinks.forEach(function (el) {
   });
 });
 
+let btnActive = document.querySelector(".wrapper__btn__play")
+let wrapperBtn = document.querySelector(".header__btn__wrapper")
 
-let wrapperPlay = document.querySelector(".btn__header__play")
+btnActive.addEventListener("click", function () {
+  btnActive.classList.toggle("header__wrapper__btn--active");
+  wrapperBtn.classList.toggle("wrapper__btn__play--active");
+  document.body.classList.toggle("stop-scroll");
+})
+
+
+btnActive.addEventListener("click", function () {
+  search.classList.remove("header__wrapper__btn--active");
+  enter.classList.remove("wrapper__btn__play--active");
+  document.body.classList.remove("stop-scroll");
+});
 
 // пошук
 
@@ -186,3 +199,4 @@ new JustValidate(".form__enter", {
     password: "Ошибка",
   },
 });
+
