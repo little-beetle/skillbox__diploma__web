@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+
+  <!-- <link rel="stylesheet" href="css/choices.min.css" /> -->
+
+  <link rel="stylesheet" href="libs/accordion.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <link rel="icon" href="img/favicon.svg" type="image/svg" />
+</head>
+<body>
+  <section id="transfer" class="section__transfer">
+    <div class="container">
+      <div class="row transfer__wrapper">
+        <div class="transfer__block flex col-xl-3 col-lg-4 col-md-6 col-12">
+          <div class="transfer__header__block transfer__block__elem">
+            <h2 class="title__2 transfer__title">Передачи</h2>
+            <p class="transfer__header__descr">Автор:</p>
+            <div class="transfer__block__select">
+              <select name="select" class="evidence-select" >
+                <!-- <option  >Автор</option> -->
+                <option value="1"> Дмитрий Гутенберг</option>
+                <option value="2"> Анна Васильева</option>
+                <option value="3"> Пётр Дмитриевский</option>
+              </select>
+
+            </div>
+          </div>
+          <div class="transfer__footer__block transfer__footer__block__1 transfer__block__elem">
+            <button class="btn__reset transfer__btn">Архив</button>
+            <p class="transfer__footer__descr">
+              В архив попадают все передачи, которые вы пропустили! Enjoy:)
+            </p>
+          </div>
+          <div class="transfer__block__elem"></div>
+        </div>
+        <div class="col-xl-9 col-lg-8 col-12  transfer__block__offer evidence-content">
+          <ul class="row list__reset transfer__list flex">
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="9">
+                <img
+                  src="img/transfer__1.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">О людях</h3>
+                    <p class="transfer__text__time">
+                      Анонсируется отдельно
+                    </p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="10">
+                <img
+                  src="img/transfer__2.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">Графомания td</h3>
+                    <p class="transfer__text__time transfer__text__time__320">
+                      По понедельникам в 10:00
+                    </p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="11">
+                <img
+                  src="img/transfer__3.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">Не Рим, Не троя</h3>
+                    <p class="transfer__text__time">По вторникам в 12:00</p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="12">
+                <img
+                  src="img/transfer__4.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">Эрудит</h3>
+                    <p class="transfer__text__time">ПО пятницам в 17:00</p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="13">
+                <img
+                  src="img/transfer__5.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">Тонкости эпох</h3>
+                    <p class="transfer__text__time">По субботам в 10:00</p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="14">
+                <img
+                  src="img/transfer__6.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">Живые мысли</h3>
+                    <p class="transfer__text__time">
+                      По воскременьям в 15:30
+                    </p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-9 col-lg-8 col-12  transfer__block__offer evidence-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsa totam vero laudantium cupiditate aut? Ea ipsa culpa, aperiam eos, alias quidem repellendus iste quas quaerat, in quisquam quo a. </p>
+        </div>
+        <div class="col-xl-9 col-lg-8 col-12  transfer__block__offer evidence-content">
+          <ul class="row list__reset transfer__list flex">
+
+
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="11">
+                <img
+                  src="img/transfer__3.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">Не Рим, Не троя</h3>
+                    <p class="transfer__text__time">По вторникам в 12:00</p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="12">
+                <img
+                  src="img/transfer__4.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">Эрудит</h3>
+                    <p class="transfer__text__time">ПО пятницам в 17:00</p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="13">
+                <img
+                  src="img/transfer__5.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">Тонкости эпох</h3>
+                    <p class="transfer__text__time">По субботам в 10:00</p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+            <li class="transfer__item col-xl-4 col-6">
+              <div class="transfer__block__list" tabindex="14">
+                <img
+                  src="img/transfer__6.jpg"
+                  class="transfer__pic"
+                  alt="logo__transfer"
+                />
+
+                <div class="transfer__block__descr">
+                  <article class="transfer__article">
+                    <h3 class="transfer__title__3">Живые мысли</h3>
+                    <p class="transfer__text__time">
+                      По воскременьям в 15:30
+                    </p>
+                    <a href="#" class="transfer__link">
+                      Подробнее
+                      <svg
+                        width="28"
+                        height="12"
+                        viewBox="0 0 28 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="transfer__footer__block transfer__footer__block__2 col-sm-8 col-12">
+          <button class="btn__reset transfer__btn">Архив</button>
+          <p class="transfer__footer__descr">
+            В архив попадают все передачи, которые вы пропустили! Enjoy:)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="libs/accordion.min.js"></script>
+  <!-- <script src="js/choices.min.js"></script> -->
+  <script src="libs/just-validate.min.js"></script>
+  <script src="js/index__1.js"></script>
+</body>
+</html>
