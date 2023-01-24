@@ -51,6 +51,29 @@ btnA.addEventListener("click", function () {
   document.body.classList.remove("stop-scroll");
 });
 
+// swiper
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 2,
+  slidesPerGroup: 1,
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+});
+
 // пошук
 
 let search = document.querySelector(".header__search");
@@ -144,7 +167,7 @@ btnMore.addEventListener("click", () => {
     .classList.add("podcast__btn__block--hidden");
 });
 
-// select
+// акордіон
 
 const element = document.querySelector("select");
 const choices = new Choices(element, {
@@ -158,68 +181,7 @@ new Accordion(".accordion-list", {
   activeClass: "accordion--active",
 });
 
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 2,
-  slidesPerGroup: 1,
-  breakpoints: {
-    1200: {
-      slidesPerView: 4,
-    },
-  },
-  spaceBetween: 30,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-    clickable: true,
-  },
-});
-
-// form
-
-new JustValidate(".about__us__form", {
-  rules: {
-    name: {
-      required: true,
-      minLength: 2,
-      maxLength: 10,
-    },
-    mail: {
-      required: true,
-      email: true,
-    },
-  },
-  messages: {
-    name: "Ошибка",
-
-    mail: "Ошибка",
-  },
-});
-
-new JustValidate(".form__enter", {
-  rules: {
-    name: {
-      required: true,
-      minLength: 2,
-      maxLength: 10,
-    },
-
-    password: {
-      required: true,
-      minLength: 2,
-      maxLength: 10,
-    },
-  },
-  messages: {
-    name: "Ошибка",
-
-    password: "Ошибка",
-  },
-});
+// Зміна блоку про гостей
 
 var HIDDEN_CLASS_NAME = "hidden";
 var TARGET_CLASS_NAME = "target";
@@ -333,63 +295,47 @@ function showTarget__1(targets, targetId) {
 
 foo();
 
-var HIDDEN_CLASS_NAME__2 = "hidden__2";
-var TARGET_CLASS_NAME__2 = "target__2";
-var SOURCE_CLASS_NAME__2 = "source__2";
+// form
 
-var targetIdToShow__2 = 1;
+new JustValidate(".about__us__form", {
+  rules: {
+    name: {
+      required: true,
+      minLength: 2,
+      maxLength: 10,
+    },
+    mail: {
+      required: true,
+      email: true,
+    },
+  },
+  messages: {
+    name: "Ошибка",
 
-function doo() {
-  var targets__2 = getElements__2(TARGET_CLASS_NAME__2);
-  var sources__2 = getElements__2(SOURCE_CLASS_NAME__2);
-  sources__2.forEach(function (sourceNode__2) {
-    var sourceNodeId__2 = extractId__2(sourceNode__2, SOURCE_CLASS_NAME__2);
-    sourceNode__2.addEventListener("click", function () {
-      showTarget__2(targets__2, sourceNodeId__2);
-    });
-  });
-  showTarget__2(targets__2, targetIdToShow__2);
-}
+    mail: "Ошибка",
+  },
+});
 
-function getElements__2(type) {
-  return [].slice
-    .call(document.querySelectorAll("." + type))
-    .sort(function (targetNode1__2, targetNode2__2) {
-      var target1Num__2 = extractId__2(targetNode1__2, TARGET_CLASS_NAME__2);
-      var target2Num__2 = extractId__2(targetNode2__2, TARGET_CLASS_NAME__2);
-      return target1Num__2 > target2Num__2;
-    });
-}
+new JustValidate(".form__enter", {
+  rules: {
+    name: {
+      required: true,
+      minLength: 2,
+      maxLength: 10,
+    },
 
-function extractId__2(targetNode__2, baseClass__2) {
-  var currentClassIndex__2 = targetNode__2.classList.length;
-  while (currentClassIndex__2--) {
-    var currentClass__2 = targetNode__2.classList.item(currentClassIndex__2);
-    var maybeIdNum__2 = parseInt(currentClass__2.split("-")[1]);
-    if (isNaN(maybeIdNum__2)) {
-      continue;
-    }
-    var classStrinToValidate__2 = baseClass__2 + "-" + maybeIdNum__2;
-    if (classStrinToValidate__2 === currentClass__2) {
-      return maybeIdNum__2;
-    }
-  }
-}
+    password: {
+      required: true,
+      minLength: 2,
+      maxLength: 10,
+    },
+  },
+  messages: {
+    name: "Ошибка",
 
-function showTarget__2(targets, targetId) {
-  targets.forEach(function (targetNode__2, targetIndex__2) {
-    var currentTargetNodeId = extractId(targetNode__2, TARGET_CLASS_NAME__2);
-    if (currentTargetNodeId === targetId) {
-      targetNode__2.classList.remove(HIDDEN_CLASS_NAME__2);
-    } else {
-      targetNode__2.classList.add(HIDDEN_CLASS_NAME__2);
-    }
-  });
-}
-
-doo();
-
-// radioChecked
+    password: "Ошибка",
+  },
+});
 
 // audio
 
