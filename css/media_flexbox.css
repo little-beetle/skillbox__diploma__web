@@ -277,7 +277,9 @@
   .swiper {
     max-width: 824px;
   }
-
+  .about__us__bg__1 {
+    margin-top: 49px;
+  }
   .swiper-slide img {
     max-width: 397px;
   }
@@ -775,6 +777,69 @@
 
   .about__us__article__descr {
     margin-bottom: 30px;
+  }
+
+  .about__us__bg__1 {
+    margin-top: 0px;
+  }
+
+  .swiper {
+    max-width: 540px;
+  }
+
+  .request__common {
+    min-width: 540px;
+  }
+
+  .about__us__form {
+    max-width: 540px;
+    min-width: 540px;
+  }
+
+  .input__form__1,
+  .input__form__2 {
+    min-width: 540px;
+  }
+  .input__form__1 {
+    margin-bottom: 30px;
+  }
+  .input__form__2 {
+    margin-left: 0px;
+  }
+
+  .btn__form {
+    padding: 23px 53px;
+  }
+
+  /* footer */
+  .footer__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__nav__block {
+    margin-left: 0;
+  }
+
+  .social__link svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__link__nav {
+    margin-top: 20px;
+  }
+
+  .footer__link {
+    margin-bottom: 80px;
+  }
+
+  .footer__nav {
+    min-width: 540px;
+  }
+
+  .footer__block {
+    margin-bottom: 60px;
   }
 }
 /*
