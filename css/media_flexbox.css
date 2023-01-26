@@ -1557,6 +1557,65 @@
     font-size: 12px;
     line-height: 16.34px;
   }
+
+  /* offer */
+
+  .section__offer {
+    padding-bottom: 54px;
+  }
+
+  .offer__bg {
+    max-width: 256px;
+    margin-bottom: 30px;
+  }
+
+  .mic__bg {
+    min-width: 256px;
+  }
+
+  .new__bg {
+    width: 62px;
+    height: 62px;
+  }
+  .offer__wrapper {
+    max-width: 256px;
+  }
+
+  .title__offer {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .offer__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .offer__text__2 {
+    margin-bottom: 12px;
+  }
+
+  .offer__cost {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .btn__offer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 0;
+    padding: 8px 14px 14px 14px;
+  }
+
+  .btn__offer svg {
+    transform: translateY(5px);
+  }
 }
 /*
 
