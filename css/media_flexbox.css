@@ -1616,6 +1616,120 @@
   .btn__offer svg {
     transform: translateY(5px);
   }
+
+  /* about us */
+
+  .section__about__us {
+    background-image: none;
+  }
+
+  .section__about__us {
+    padding: 54px 0;
+  }
+  .about__us__article__descr {
+    margin-bottom: 0px;
+    max-width: 256px;
+  }
+  .about__us__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .about__us__text__1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 4px;
+  }
+
+  .about__us__text__2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .about__us__bg__1 {
+    display: none;
+  }
+
+  .swiper {
+    max-width: 256px;
+    margin-bottom: 10px;
+  }
+
+  .about__us__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+  .swiper__descr {
+    padding-top: 12px;
+  }
+  .about__us__people__descr {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-slide-active {
+    margin-right: 20px !important;
+  }
+
+  .about__us__form {
+    max-width: 256px;
+    min-width: 256px;
+  }
+  .form-textarea {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 17px 24px;
+  }
+  .request__common {
+    min-width: 256px;
+  }
+
+  .input__form__1,
+  .input__form__2 {
+    min-width: 256px;
+  }
+
+  .form-input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 17px 24px;
+    min-height: 50px;
+  }
+
+  .btn__form {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 13px 33px;
+    margin-bottom: 20px;
+  }
+
+  .form-check {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+  }
+  .custom__checkbox + .custom__radio__check {
+    width: 13px;
+    height: 13px;
+  }
+
+  .custom__checkbox + .custom__radio__check:before {
+    top: 1px;
+  }
 }
 /*
 
