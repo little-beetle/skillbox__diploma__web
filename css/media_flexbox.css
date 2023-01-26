@@ -1117,6 +1117,128 @@
   .transfer__footer__block {
     background-size: contain;
   }
+  .transfer__footer__block__1 {
+    display: none;
+  }
+
+  /* guest */
+  .section__guest {
+    padding: 54px 0;
+  }
+  .guest__row {
+    min-width: 256px;
+  }
+  .guest__wrapper__info {
+    max-width: 256px;
+  }
+
+  .guest__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .guest__descr {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .guest__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22.4px;
+    margin-bottom: 30px;
+  }
+
+  .accordion__block {
+    min-width: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list__reset__guest {
+    max-width: 256px;
+    min-width: 256px;
+  }
+  .guest__content {
+    max-width: 256px;
+  }
+
+  .more__info {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 0 11px 0;
+  }
+  .accordion__btn {
+    width: 30px;
+    height: 30px;
+  }
+  .guest__accordion__item:nth-child(3) .guest__accordion__btn:last-child {
+    margin-bottom: 0px !important;
+  }
+  .guest__accordion__list {
+    max-width: 233px;
+    padding: 20px 0;
+  }
+
+  .guest__accordion__btn {
+    min-width: 101px;
+    max-width: 101px;
+  }
+
+  .guest__accordion__list .guest__accordion__item:nth-child(4) {
+    flex-direction: column;
+    align-items: center;
+    max-width: 101px;
+  }
+  .guest__accordion__list .guest__accordion__item {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .guest__accordion__list
+    .guest__accordion__item:nth-child(4)
+    .guest__accordion__btn:nth-child(2),
+  .guest__accordion__list
+    .guest__accordion__item:nth-child(4)
+    .guest__accordion__btn:nth-child(3) {
+    margin-left: 0px;
+  }
+
+  .guest__accordion__btn {
+    text-align: start;
+  }
+  .list__reset__guest {
+    margin-bottom: 0px;
+  }
+  .targer__0 {
+    width: 256px;
+  }
+
+  .guest__name__content__item svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .guest__content__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .guest__content__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28.8px;
+  }
+
+  .btn__content__guest {
+    padding: 8px 12px;
+  }
 }
 /*
 
