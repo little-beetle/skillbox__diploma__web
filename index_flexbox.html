@@ -18,7 +18,10 @@
 
     <link rel="stylesheet" href="css/style_flexbox.css" />
     <link rel="stylesheet" href="css/media_flexbox.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
     <link rel="icon" href="img/favicon.svg" type="image/svg" />
   </head>
   <body>
@@ -11761,7 +11764,7 @@
             <article class="col-xl-4 col-12 playlist__article">
               <h2 class="title__2 title__playlist">Плейлисты</h2>
               <p class="playlist__genre">Жанр</p>
-              <div class="radio__btn__block__wrapper flex">
+              <div class="radio__btn__block__wrapper flex" data-simplebar>
                 <ul class="list__reset flex radion__btn__list">
                   <li class="radion__btn__item__left">
                     <ul class="list__reset flex radio__btn__list__left">
@@ -11778,7 +11781,9 @@
                             checked
                           />
 
-                          <span class="custom__radio__check"></span>
+                          <span
+                            class="custom__radio__check custom__radio__check__1"
+                          ></span>
                           <span class="color__radio__check">Постпанк</span>
                         </label>
                       </li>
@@ -11794,8 +11799,10 @@
                             class="radio-input"
                             checked
                           />
-                          Хардкор
-                          <span class="custom__radio__check"></span>
+                          <span
+                            class="custom__radio__check custom__radio__check__2"
+                          ></span>
+                          <span class="color__radio__check">Хардкор</span>
                         </label>
                       </li>
                       <li class="radio__btn__item">
@@ -11810,8 +11817,11 @@
                             class="radio-input"
                             checked
                           />
-                          Панк-рок
-                          <span class="custom__radio__check"></span>
+
+                          <span
+                            class="custom__radio__check custom__radio__check__3"
+                          ></span>
+                          <span class="color__radio__check">Панк-рок</span>
                         </label>
                       </li>
                       <li class="radio__btn__item">
@@ -11826,8 +11836,11 @@
                             class="radio-input"
                             checked
                           />
-                          Рок
-                          <span class="custom__radio__check"></span>
+
+                          <span
+                            class="custom__radio__check custom__radio__check__4"
+                          ></span>
+                          <span class="color__radio__check"> Рок </span>
                         </label>
                       </li>
                     </ul>
@@ -11846,8 +11859,13 @@
                             class="radio-input"
                             checked
                           />
-                          Прогрессивный рок
-                          <span class="custom__radio__check"></span>
+
+                          <span
+                            class="custom__radio__check custom__radio__check__5"
+                          ></span>
+                          <span class="color__radio__check">
+                            Прогрессивный рок
+                          </span>
                         </label>
                       </li>
                       <li class="radio__btn__item">
@@ -11862,8 +11880,13 @@
                             class="radio-input"
                             checked
                           />
-                          Электронная музыка
-                          <span class="custom__radio__check"></span>
+
+                          <span
+                            class="custom__radio__check custom__radio__check__6"
+                          ></span>
+                          <span class="color__radio__check">
+                            Электронная музыка
+                          </span>
                         </label>
                       </li>
                       <li class="radio__btn__item">
@@ -11878,8 +11901,13 @@
                             class="radio-input"
                             checked
                           />
-                          Классическая музыка
-                          <span class="custom__radio__check"></span>
+
+                          <span
+                            class="custom__radio__check custom__radio__check__7"
+                          ></span>
+                          <span class="color__radio__check">
+                            Классическая музыка
+                          </span>
                         </label>
                       </li>
                       <li class="radio__btn__item">
@@ -11894,8 +11922,13 @@
                             class="radio-input"
                             checked
                           />
-                          Звуки природы и шум города
-                          <span class="custom__radio__check"></span>
+
+                          <span
+                            class="custom__radio__check custom__radio__check__8"
+                          ></span>
+                          <span class="color__radio__check">
+                            Звуки природы и шум города
+                          </span>
                         </label>
                       </li>
                     </ul>
@@ -17225,11 +17258,13 @@
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="libs/accordion.min.js"></script>
 
     <script src="libs/just-validate.min.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
     <script src="js/choices.min.js"></script>
     <script src="js/index_flexbox.js"></script>
