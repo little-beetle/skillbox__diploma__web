@@ -98,7 +98,7 @@
 }
 
 .header__nav__item:not(:first-child) {
-  margin-left: 60px;
+  margin-left: 58.75px;
 }
 
 .header__block__btn {
@@ -107,7 +107,7 @@
   justify-content: space-between;
   align-items: center;
 
-  min-width: 145px;
+  min-width: 152px;
 }
 
 .header__row__2 {
@@ -116,13 +116,13 @@
 }
 
 .header__nav__2 {
-  margin-right: 55px;
+  margin-right: 52px;
 }
 .header__row__wrapper_1 {
   display: flex;
 }
 .header__nav__item__2:not(:first-child) {
-  margin-left: 54px;
+  margin-left: 53.7px;
 }
 
 .header__block__btn__2 {
@@ -461,7 +461,7 @@ p {
 
 .header__nav {
   min-width: 100%;
-  padding-right: 30px;
+  /* padding-right: 30px; */
 }
 
 .header__logo__link svg .letter {
@@ -925,6 +925,7 @@ p {
 }
 
 .enter--active {
+  max-width: 824px;
   visibility: visible;
   transform: none;
   transform: translateX(-50%);
@@ -1016,7 +1017,7 @@ p {
 }
 
 .btn__item__block {
-  padding: 0px 44px 0 24px;
+  padding: 0px 10px 0 10px;
   align-items: center;
   border-left: 1px solid var(--color__5);
 }
@@ -1028,7 +1029,9 @@ p {
   font-size: 16px;
   line-height: 16px;
   color: var(--color__1);
-  margin-left: 10px;
+  margin-left: 8px;
+  text-align: left;
+  min-width: 121px;
 }
 
 .btn__item__block:last-child {
@@ -1052,8 +1055,8 @@ p {
 }
 
 .play__btn__1 {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   border: 0;
   background: transparent;
   padding: 0;
@@ -1082,8 +1085,8 @@ p {
 }
 
 .play__btn__2 {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   border: 0;
   background: transparent;
   padding: 0;
@@ -1133,6 +1136,8 @@ p {
   min-height: 60px;
   min-width: 46px;
   align-items: center;
+
+  margin-left: 52px;
   transition: background-color 0.3s ease-in-out;
 }
 .header__more__btn {
@@ -1482,9 +1487,12 @@ p {
   border-top: 1px solid var(--color__5);
   padding-top: 7px;
 }
-
+.like__list {
+  max-width: 182px;
+  justify-content: space-between;
+}
 .like__item:not(:first-child) {
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 .like__btn {

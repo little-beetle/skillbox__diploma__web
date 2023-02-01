@@ -49,6 +49,12 @@
     height: 24px;
   }
 
+  .btn__fonts__1,
+  .btn__fonts__2 {
+    min-width: 97px;
+    margin-left: 8.5px;
+  }
+
   /* prime */
   .prime__block__left {
     padding: 90px 0;
@@ -96,7 +102,9 @@
   .podcast__block {
     padding: 20px 30px;
   }
-
+  .like__list {
+    max-width: 170px;
+  }
   .like__btn {
     height: 16px;
   }
@@ -110,7 +118,8 @@
     max-width: 570px;
   }
   .transfer__header__block {
-    margin-bottom: 47px;
+    margin-bottom: 227px;
+    max-height: 112px;
   }
   .transfer__block {
     justify-content: start;
@@ -122,6 +131,12 @@
 
   .transfer__item:nth-child(2n) {
     margin-left: 30px;
+  }
+  .transfer__btn {
+    padding: 10px 54px;
+  }
+  .transfer__footer__block {
+    padding-top: 113px;
   }
 
   /* guest */
@@ -335,8 +350,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    min-width: 250px;
-    height: 50vh;
+    height: 100vh;
     z-index: 1000;
     padding: 50px;
     box-shadow: 0 0 5px #888;
@@ -347,15 +361,40 @@
     transform: translateY(-120%);
     margin-top: 60px;
     transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .header__nav {
     background-image: url("../img/burger__spiral.svg"),
       url("../img/burger__spiral.svg");
     background-repeat: no-repeat;
-    background-position: right 35% bottom -20px, right 15% top -20px;
+    background-position: right 40% bottom -10px, right 20% top -10px;
+  }
+  .header__nav__wrapper__img {
+    width: 255px;
+    margin-left: 35px;
+    height: 500px;
+    display: flex;
   }
 
+  .header__bg__img__1,
+  .header__bg__img__2 {
+    /* background-image: url("../img/burger__spiral.svg"),
+      url("../img/burger__spiral.svg");
+    background-repeat: no-repeat;
+    width: 113px;
+
+    height: 364px;*/
+  }
+  .header__bg__img__2 {
+    margin-left: 30px;
+    margin-top: 20vh;
+  }
+  .header__nav__list {
+    min-width: initial;
+  }
   .header__link__968 {
     height: 100%;
   }
@@ -368,15 +407,23 @@
   }
 
   .header__nav .header__nav__list {
-    min-width: 50%;
-    padding-left: 25px;
-    padding-top: 60px;
+    min-width: 250px;
+    max-height: 188px;
+    flex-direction: column;
     text-align: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .header__nav .header__nav__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 60px;
+  }
+  .header__nav .header__nav__item:nth-child(3) {
+    margin-bottom: 0px;
+  }
+  .header__nav__item {
+    min-width: 100px;
   }
 
   .header__nav .header__link {
@@ -453,7 +500,13 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
-
+  .header__nav__wrapper {
+    max-width: 540px;
+    min-width: 540px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
   .header__nav__list__968 {
     flex-direction: column;
   }
@@ -571,7 +624,17 @@
   .header__nav__2 {
     margin-right: 0px;
   }
-
+  .enter--active {
+    max-width: 539px;
+    padding: 60px 40px;
+  }
+  .btn__fonts__2 {
+    margin-left: 0;
+  }
+  .btn__fonts__1 {
+    min-width: inherit;
+    margin-left: 10px;
+  }
   /* podcast */
 
   .podcast__title {
@@ -604,6 +667,10 @@
 
   .podcast__item:nth-child(2n) {
     padding-left: 0px;
+  }
+
+  .like__list {
+    max-width: 170px;
   }
 
   /* transfer */
@@ -902,6 +969,54 @@
     top: 172px;
   }
 
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .enter--active {
+    max-width: 256px;
+    padding: 40px 20px;
+  }
+
+  .enter__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 8px;
+  }
+
+  .enter__descr {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .registrantion {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+
+  .form-input-enter {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    padding: 12px 18px;
+    min-height: 40px;
+  }
+
+  .btn__form__enter {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 56.5px;
+    max-width: 160px;
+    min-height: 40px;
+  }
   /* prime */
 
   .prime__block__left {
@@ -1012,6 +1127,11 @@
   .like__btn {
     height: 13px;
   }
+
+  .like__list {
+    max-width: 170px;
+  }
+
   .number__like {
     font-size: 12px;
   }
