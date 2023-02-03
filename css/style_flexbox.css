@@ -331,9 +331,12 @@
   margin-left: 30px;
 }
 .swiper__wrapper {
+  min-width: 1400px;
+  position: relative;
   display: flex;
   justify-content: center;
 }
+
 .swiper {
   max-width: 1110px;
   margin-left: 0;
@@ -1980,6 +1983,7 @@ p {
   font-weight: 400;
   font-size: 48px;
   line-height: 100%;
+  margin-bottom: 12px;
   color: var(--color__14);
 }
 
@@ -2052,6 +2056,7 @@ p {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
+  margin-bottom: 8px;
   line-height: 150%;
   color: var(--color__3);
 }

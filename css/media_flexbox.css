@@ -49,8 +49,7 @@
     height: 24px;
   }
 
-  .btn__fonts__1,
-  .btn__fonts__2 {
+  .btn__fonts__1 {
     min-width: 97px;
     margin-left: 8.5px;
   }
@@ -94,10 +93,13 @@
 
   .podcast__item {
     min-width: 410px;
+    max-width: 410px;
     min-height: 140px;
   }
+
   .podcast__wrapper__descr {
     min-width: 71%;
+    min-height: 140px;
   }
   .podcast__block {
     padding: 20px 30px;
