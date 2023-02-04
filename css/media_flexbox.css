@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .header__row__1 {
     flex-direction: column;
     padding-bottom: 0;
@@ -301,6 +301,15 @@
     max-width: 397px;
   }
 
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: -62px;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: -62px;
+  }
   .about__us__form {
     max-width: 824px;
     min-width: 824px;
@@ -993,15 +1002,32 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
+    color: #a1a6b4;
   }
 
+  .form__enter {
+    margin-bottom: 10px;
+  }
+  .close__btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  .enter__social__link__descr {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #a1a6b4;
+    margin-bottom: 10px;
+  }
   .registrantion {
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
     margin-bottom: 20px;
   }
-
+  .enter article {
+    margin-bottom: 0px;
+  }
   .form-input-enter {
     font-weight: 400;
     font-size: 16px;
@@ -1019,6 +1045,7 @@
     max-width: 160px;
     min-height: 40px;
   }
+
   /* prime */
 
   .prime__block__left {
@@ -1076,7 +1103,9 @@
   .podcast__item__pic {
     min-height: 70px;
   }
-
+  .podcast__wrapper__descr {
+    min-height: 113px;
+  }
   .podcast__item:nth-child(1) .podcast__item__pic {
     background-image: url(../img/podcast__1__768.jpg);
   }
